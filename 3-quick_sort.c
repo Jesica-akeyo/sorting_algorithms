@@ -14,9 +14,8 @@ void quick_sort(int *array, size_t size)
 }
 
 /**
- * _qsort - auxiliar function for the 
+ * _qsort - auxiliar function for the
  * quick_sort function
- * 
  * @a: input array
  * @low: first elemt index
  * @high: last element index
@@ -36,7 +35,7 @@ void _qsort(int *a, int low, int high, int size)
 		{
 			if (a[i] < a[p])
 			{
-				if(i != w)
+				if (i != w)
 				{
 					tmp = a[i];
 					a[i] = a[w];
@@ -46,7 +45,7 @@ void _qsort(int *a, int low, int high, int size)
 				w++;
 			}
 		}
-		if (w!= p && a[w] != a[p])
+		if (w != p && a[w] != a[p])
 		{
 			tmp = a[w];
 			a[w] = a[p];
